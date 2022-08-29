@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form action="salvar.html" method="GET">
+        <fieldset>
+            <legend>Dados do Usúario</legend>
+            <label for="nome">Nome:</label>
+            <input id="nome" name="nome" type="text" placeholder="digite o seu nome">
+
+            <br><br>
+
+            <label for="email">Email:</label>
+            <input id="email" name="email" type="email" placeholder="digite o seu email">
+
+            <br><br>  
+
+            <label for="Senha">Senha:</label>
+            <input id="Senha" name="senha" type="password" placeholder="digite uma senha">
+
+        <br><br>
+
+        <label> Selecione a cor do seu nome</label>
+        <input type="color" name="cor">
+
+        <br><br>
+
+        <labe>Sexo:</label>
+        <br>
+        <input id="Masculino" name="sexo" type="radio" value="Masculino"> <label for="Masculino">Masculino</label>
+        <br>
+        <input id="Feminino" name="sexo" type="radio" value="Feminino"> <label for="Feminino">Feminino</label>
+        <br>
+        <input id="Prefiro não informar" name="sexo" type="radio" value="Nao definido"> <label for="Prefiro não informar">Prefiro não informar</label>
+
+        <br><br>
+
+        <label>Habilidades</label>
+        <br>
+        <input name="Habilidades" name="Habilidades" type="checkbox" value="HTML" id="html"> <label for="html">HTML</label>
+        <br>
+        <input name="Habilidades" type="checkbox" value="CSS" id="css"> <label for="css">CSS</label>
+        <br>
+        <input name="Habilidades" type="checkbox" value="Javascript" id="javascript"> <label for="javascript">Javascript</label>
+
+        <br><br>
+
+        <label>Cidade</label>
+        <br>
+        <select name="Cidade">
+            <option selected value="">--Selecione--</option>
+            <option value="São paulo">São paulo</option>
+            <option value="Rio de janeiro">Rio de janeiro</option>
+            <option value="Minas gerais">Minas gerais</option>
+        </select>
+
+        <br><br>
+
+        <label>Carro</label>
+        <br>
+        <select name="Carro">
+            <optgroup label="Honda">
+                <option value="Civic">Civic</option>
+            </optgroup>
+            <optgroup label="GM">
+                <option value="Celta">Celta</option>
+            </optgroup>
+            <optgroup label="Fiat">
+                <option value="Uno">Uno</option>
+            </optgroup>
+         </select>
+
+         <br><br>
+         <label>Digite a sua fruta preferida:</label>
+         <input list="listaFrutas" type="text" name="frutas" placeholder="Digite a fruta">
+
+         <datalist id="listaFrutas">
+            <option value="Abacate">
+            <option value="Abacaxi">
+            <option value="Açaí">
+            <option value="Acerola">    
+         </datalist>
+
+         <br></br>
+
+         <label>Digite uma mensagem</label>
+         <br>
+         <textarea name="mensagem"  cols="50" rows="10"></textarea>
+
+         
+        
+        <br><br>
+
+
+        <button>Enviar</button>
+        
+    </fieldset>
+    </form>
+</body>
+</html>
